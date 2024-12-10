@@ -1,0 +1,35 @@
+.product_img {
+  list-style-type: none;
+  width: 290px;
+  padding: 20px;
+  margin: 6px 6px;
+  border: 1px solid #33b5e5;
+}
+
+.product_containers {
+  margin-top: 64px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.choose_input {
+  width: 108px;
+  margin-bottom: 8px;
+  padding: 10px 5px;
+}
+
+.button_cart {
+  padding: 15px 20px;
+  background-color: #33b5e5;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+}
+
+.button_cart:hover {
+  background-color: #1d718f;
+}

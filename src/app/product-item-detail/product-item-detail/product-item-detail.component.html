@@ -1,0 +1,36 @@
+<div *ngIf="product" class="container container_detail">
+  <img src="{{ product.url }}" alt="" />
+  <div class="container item_detail">
+    <h2>{{ product.name }}</h2>
+    <p>${{ product.price }}</p>
+    <p>{{ product.description }}</p>
+    <form (ngSubmit)="onSubmit()" class="margin-bottom-16px">
+      <select
+        name=""
+        id=""
+        class="choose_input"
+        [(ngModel)]="selectedAmount"
+        [ngModelOptions]="{ standalone: true }"
+      >
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+      </select>
+      <br />
+      <button class="button_cart" type="submit">Add to cart</button>
+    </form>
+
+    <a routerLink="/products" class="back-link">Back to product list</a>
+  </div>
+</div>
+
+<div *ngIf="!product">
+  <p>Loading...</p>
+</div>
